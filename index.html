@@ -1,0 +1,11 @@
+<input type="number" id="age" min="1" max="30" />
+<p id="result"></p>
+<script>
+    document.getElementById("age").addEventListener('change', function () {
+        if(this.value >= 18) {
+            document.getElementById("result").innerHTML = "es mayor :)";
+        } else {
+            document.getElementById("result").innerHTML = "es menor :(";
+        }
+    });
+</script>
